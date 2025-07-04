@@ -32,6 +32,8 @@ import {
 import { type LogFormValues, logFormSchema } from "../utils/schema-validators";
 import { useLogFilterStore } from "../store/filter-store";
 import { endOfDay, startOfDay } from "date-fns";
+import type { AxiosError } from "axios";
+import { toast } from "sonner";
 
 const Dashboard = () => {
   const { filters } = useLogFilterStore();
@@ -73,7 +75,11 @@ const Dashboard = () => {
         reset();
       },
       onError: (err) => {
-        console.error("Log creation failed:", err);
+        const axiosError = err as AxiosError<{ message?: string }>;
+        const message =
+          axiosError.response?.data?.message ||
+          "Failed to create log. Try again.";
+        toast.error(message)
       },
     });
   };
