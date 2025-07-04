@@ -1,0 +1,94 @@
+[
+  {
+    "level": "warn",
+    "message": "prod database getting full",
+    "resourceId": "server-19922",
+    "timestamp": "2025-07-04T06:45:41.031Z",
+    "traceId": "sjs7772",
+    "spanId": "span-2662hh",
+    "commit": "8822jj",
+    "metadata": {
+      "prod-server": "ec2-111"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to delete location",
+    "resourceId": "server-1234",
+    "timestamp": "2025-07-03T14:25:10.000Z",
+    "traceId": "trace-abc12223",
+    "spanId": "span-33333",
+    "commit": "5e5343f",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "env": "production",
+      "requestId": "req-7890"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to delete a log",
+    "resourceId": "server-1234",
+    "timestamp": "2025-07-03T14:25:10.000Z",
+    "traceId": "trace-abc123",
+    "spanId": "span-333",
+    "commit": "5e5343f",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "env": "production",
+      "requestId": "req-7890"
+    }
+  },
+  {
+    "level": "error",
+    "message": "failed to delete a user order",
+    "resourceId": "server-1234",
+    "timestamp": "2025-07-03T14:25:10.000Z",
+    "traceId": "5e53445f",
+    "spanId": "span-333",
+    "commit": "5e5343f",
+    "metadata": {
+      "parentResourceId": "server-5678"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to delete location",
+    "resourceId": "server-1234",
+    "timestamp": "2025-07-03T14:25:10.000Z",
+    "traceId": "trace-abc123",
+    "spanId": "span-333",
+    "commit": "5e5343f",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "env": "production",
+      "requestId": "req-7890"
+    }
+  },
+  {
+    "level": "info",
+    "message": "someone tried to access logs",
+    "resourceId": "server-12345",
+    "timestamp": "2025-07-04T06:09:24Z",
+    "traceId": "trace-annc00",
+    "spanId": "span-xk833",
+    "commit": "788as88",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "env": "production",
+      "requestId": "req-7890"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "debug prod logs",
+    "resourceId": "server-1111",
+    "timestamp": "2025-07-04T06:46:47.045Z",
+    "traceId": "ksks8sss",
+    "spanId": "span-222",
+    "commit": "jssjsjj333",
+    "metadata": {
+      "prod": "ec2ll"
+    }
+  }
+]
