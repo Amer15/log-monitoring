@@ -30,14 +30,25 @@ import {
   SelectValue,
 } from "../components/ui/select";
 import { type LogFormValues, logFormSchema } from "../utils/schema-validators";
+import { useLogFilterStore } from "../store/filter-store";
+import { endOfDay, startOfDay } from "date-fns";
 
 const Dashboard = () => {
-  const { data: logs = [], isLoading, isError } = useLogQuery();
-  const {
-    mutate: createLog,
-    isPending,
-    reset
-  } = useCreateLog();
+  const { filters } = useLogFilterStore();
+  const query = {
+    level: filters.level,
+    message: filters.message,
+    resourceId: filters.resourceId,
+    timestamp_start: filters.timestamp_start
+      ? startOfDay(filters.timestamp_start).toISOString()
+      : undefined,
+    timestamp_end: filters.timestamp_end
+      ? endOfDay(filters.timestamp_end).toISOString()
+      : undefined,
+  };
+
+  const { data: logs = [], isLoading, isError } = useLogQuery(query);
+  const { mutate: createLog, isPending, reset } = useCreateLog();
 
   const [open, setOpen] = useState(false);
 
@@ -68,11 +79,10 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="h-screen">
+    <section className="h-screen flex-1">
       <div className="max-w-[1500px] mx-auto h-screen p-6">
         <div className="flex justify-between items-center max-w-[1000px] mx-auto mb-6">
           <h3 className="font-semibold text-xl">Logs View</h3>
-
           {/* Sheet Trigger Button */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -180,7 +190,7 @@ const Dashboard = () => {
         ) : isError ? (
           <p className="text-center text-red-500">Failed to load logs.</p>
         ) : (
-          <Table>
+          <Table className="w-full border border-border">
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[80px]">Level</TableHead>
