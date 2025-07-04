@@ -25,13 +25,12 @@ export function AppSidebar() {
   return (
     <Sidebar side="left" variant="sidebar" collapsible="offcanvas">
       <SidebarHeader>
-        <div className="px-4 py-2 font-bold">Filters</div>
-        <div className="flex justify-between items-center px-4">
-          <Button onClick={() => {}}>Apply</Button>
-          <Button variant="outline" onClick={clearFilters}>
-            Clear
-          </Button>
-        </div>
+       <div className="flex justify-between items-center">
+         <h2 className="font-bold">Filters</h2>
+        <Button variant="outline" onClick={clearFilters}>
+          Clear
+        </Button>
+       </div>
       </SidebarHeader>
       <SidebarContent className="flex flex-col gap-4 p-4">
         <SidebarGroup>
