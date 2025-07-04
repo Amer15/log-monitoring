@@ -1,16 +1,6 @@
 [
   {
     "level": "info",
-    "message": "This is to test duplicates",
-    "resourceId": "aadadsdasa",
-    "timestamp": "2025-07-04T09:44:22.955Z",
-    "traceId": "skkksww22",
-    "spanId": "span-2200002",
-    "commit": "dasassdds",
-    "metadata": {}
-  },
-  {
-    "level": "info",
     "message": "someone tried to access logs",
     "resourceId": "server-12345",
     "timestamp": "2025-07-04T06:09:24Z",
@@ -51,20 +41,6 @@
   },
   {
     "level": "error",
-    "message": "Failed to delete a log",
-    "resourceId": "server-1234",
-    "timestamp": "2025-07-03T14:25:10.000Z",
-    "traceId": "trace-abc123",
-    "spanId": "span-333",
-    "commit": "5e5343f",
-    "metadata": {
-      "parentResourceId": "server-5678",
-      "env": "production",
-      "requestId": "req-7890"
-    }
-  },
-  {
-    "level": "error",
     "message": "Failed to delete location",
     "resourceId": "server-1234",
     "timestamp": "2025-07-03T14:25:10.000Z",
@@ -87,30 +63,6 @@
     "commit": "8822jj",
     "metadata": {
       "prod-server": "ec2-111"
-    }
-  },
-  {
-    "level": "warn",
-    "message": "server space is too low",
-    "resourceId": "server-111222",
-    "timestamp": "2025-07-04T09:31:45.010Z",
-    "traceId": "jajjs88882",
-    "spanId": "span-2233",
-    "commit": "ajja7788",
-    "metadata": {
-      "prod": "233sss"
-    }
-  },
-  {
-    "level": "info",
-    "message": "To test metadata",
-    "resourceId": "server-28992",
-    "timestamp": "2025-07-04T09:47:10.193Z",
-    "traceId": "jjsj99222",
-    "spanId": "span28822q",
-    "commit": "akk882",
-    "metadata": {
-      "test": "metadata"
     }
   }
 ]
