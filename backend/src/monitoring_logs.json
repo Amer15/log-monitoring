@@ -1,6 +1,16 @@
 [
   {
     "level": "info",
+    "message": "This is to test duplicates",
+    "resourceId": "aadadsdasa",
+    "timestamp": "2025-07-04T09:44:22.955Z",
+    "traceId": "skkksww22",
+    "spanId": "span-2200002",
+    "commit": "dasassdds",
+    "metadata": {}
+  },
+  {
+    "level": "info",
     "message": "someone tried to access logs",
     "resourceId": "server-12345",
     "timestamp": "2025-07-04T06:09:24Z",
@@ -89,6 +99,18 @@
     "commit": "ajja7788",
     "metadata": {
       "prod": "233sss"
+    }
+  },
+  {
+    "level": "info",
+    "message": "To test metadata",
+    "resourceId": "server-28992",
+    "timestamp": "2025-07-04T09:47:10.193Z",
+    "traceId": "jjsj99222",
+    "spanId": "span28822q",
+    "commit": "akk882",
+    "metadata": {
+      "test": "metadata"
     }
   }
 ]
