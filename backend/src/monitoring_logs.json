@@ -1,5 +1,17 @@
 [
   {
+    "level": "error",
+    "message": "failed to create a log",
+    "resourceId": "server-100010",
+    "timestamp": "2025-07-07T09:52:40.393Z",
+    "traceId": "trace-199191",
+    "spanId": "span-1999191",
+    "commit": "shhs8881",
+    "metadata": {
+      "prod": "1234"
+    }
+  },
+  {
     "level": "info",
     "message": "someone tried to access logs",
     "resourceId": "server-12345",
@@ -63,6 +75,18 @@
     "commit": "8822jj",
     "metadata": {
       "prod-server": "ec2-111"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "debug post log API",
+    "resourceId": "server-199111",
+    "timestamp": "2025-07-07T10:06:57.902Z",
+    "traceId": "dwddd333333",
+    "spanId": "span-1991919",
+    "commit": "hhs88881",
+    "metadata": {
+      "prod": "123444"
     }
   }
 ]
